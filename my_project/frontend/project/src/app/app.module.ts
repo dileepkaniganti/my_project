@@ -14,6 +14,10 @@ import { CartStatusComponent } from './components/cart-status/cart-status.compon
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { UserpageComponent } from './components/userpage/userpage.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
 
 
 @NgModule({
@@ -28,6 +32,10 @@ import { SigninComponent } from './components/signin/signin.component';
     CheckoutComponent,
     SignupComponent,
     SigninComponent,
+    HomepageComponent,
+    UserpageComponent,
+    ContactusComponent,
+    AboutusComponent,
    
   ],
   imports: [

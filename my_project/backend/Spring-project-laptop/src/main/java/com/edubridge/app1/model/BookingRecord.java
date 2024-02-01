@@ -30,7 +30,7 @@ public class BookingRecord {
 	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 	@ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
 	@JoinColumn(name = "customerId")
-	private User customer;
+	private CustomerRegistration customer;
 
 	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 	@ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
@@ -82,11 +82,11 @@ public class BookingRecord {
 		this.laptop = laptop;
 	}
 
-	public User getCustomer() {
+	public CustomerRegistration getCustomer() {
 		return customer;
 	}
 
-	public void setCustomer(User customer) {
+	public void setCustomer(CustomerRegistration customer) {
 		this.customer = customer;
 	}
 
@@ -115,7 +115,7 @@ public class BookingRecord {
 	 * @param categories
 	 */
 	public BookingRecord(Integer bookingId, Date bookingDate, Date returnDate, double bookingFee, Laptop laptop,
-			User customer, Categories categories) {
+			CustomerRegistration customer, Categories categories) {
 		super();
 		this.bookingId = bookingId;
 		this.bookingDate = bookingDate;

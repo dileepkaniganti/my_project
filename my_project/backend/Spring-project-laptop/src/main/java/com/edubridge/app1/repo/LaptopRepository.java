@@ -12,7 +12,5 @@ import com.edubridge.app1.model.Laptop;
 public interface LaptopRepository extends JpaRepository<Laptop, Integer> {
    List<Laptop> findBycategories(Categories categories);
    List<Laptop>findByLaptopNameContaining(String laptopName);
-   
-   
 }
 
